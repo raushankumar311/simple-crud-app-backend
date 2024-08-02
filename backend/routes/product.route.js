@@ -10,6 +10,9 @@ router.post("/", createProduct);
 // Route to get all the products
 router.get("/", getProducts);
 
+// Route to get the products having quantity = 0
+router.get("/zero-quantity", getInventoryReport);
+
 // Route to get a product by id
 router.get("/:id", getProduct);
 
@@ -19,7 +22,6 @@ router.put("/:id", updateProduct);
 // Route to delete(DELETE) a product by id
 router.delete("/:id", deleteProduct);
 
-router.get("/zero-quantity", getInventoryReport);
 
 
 module.exports = router;

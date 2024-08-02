@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './Login';
-import Home from './Home';
-import { LoginContext, LoginProvider } from './LoginContext'; // Import context
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./Login";
+import Home from "./Home";
+import { LoginContext, LoginProvider } from "./LoginContext"; // Import context
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
               </LoginContext.Consumer>
             }
           />
+          {/* <Route path="/viewInventory" element={<ViewInventory />} /> */}
         </Routes>
       </BrowserRouter>
     </LoginProvider>
